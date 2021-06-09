@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Signika Negative', sans-serif;
+    padding: 2rem 4rem;
+    flex-wrap: wrap;
+    background-color: #e96443;
+    background-image: linear-gradient(315deg, #e96443 0%, #904e95 74%);
+    background-size: cover;
+    height: 100vh;
+}
+
+.bar {
+    width: 20rem;
+    height: 0.5rem;
+    background-color: black;
+    position: absolute;
+    left: 11rem;
+    top: 7.5rem;
+}
+
+.bar::before,
+.bar::after {
+    content: "";
+    width: 14rem;
+    height: 0.5rem;
+    background-color: black;
+    position: absolute;
+}
+
+.bar::before {
+    top: 9rem;
+    left: 5rem;
+    transform: rotate(-50deg);
+}
+
+.bar::after {
+    top: 9rem;
+    right: 5rem;
+    transform: rotate(50deg);
+}
+
+.container1,
+.container2 {
+    margin: 5rem;
+}
+
+.footer {
+    width: 100vw;
+    text-align: right;
+    margin-top: 40.5rem;
+    position: fixed;
+}
+
+.compResult,
+.humanResult {
+    border: 20px solid #f29191;
+}
+
+.headingDiv {
+    border: 5px black solid;
+    padding: 0.5rem 2rem;
+    width: 35rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.innerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    padding: 3rem 5rem;
+    width: 45rem;
+    height: 20rem;
+    position: relative;
+}
+
+.main2 {
+    width: 100Vw;
+    height: 28rem;
+    position: absolute;
+    padding: 1rem 5rem;
+    background: inherit;
+    margin-top: 30vh;
+}
+
+.part {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    background-color: #e96443;
+    background-image: linear-gradient(315deg, #e96443 0%, #904e95 74%);
+    box-shadow: 3px 5px #888888;
+    border: 5px solid black;
+}
+
+.part:hover {
+    transform: scale(.98);
+}
+
+.partImage {
+    width: 6rem;
+    height: 6rem;
+}
+
+.partPaper {
+    right: 9rem;
+}
+
+.partScissor {
+    top: 13rem;
+    left: 16rem;
+}
+
+.partStone {
+    left: 6rem;
+}
+
+.resultHeading {
+    margin: 2rem;
+}
+
+.resultText {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.score {
+    font-size: 2rem;
+}
+
+.scoreBoard {
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.submit {
+    margin-top: 10rem;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #e96443;
+    background-image: linear-gradient(315deg, #e96443 0%, #904e95 74%);
+    box-shadow: 3px 5px #888888;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.toggler:hover {
+    transform: scale(0.95);
+}
+
+@media(max-width: 400px) {
+    body {
+        padding: 1rem;
+    }
+    .bar {
+        left: 1rem;
+    }
+    .bar::before {
+        top: 8rem;
+    }
+    .bar::after {
+        top: 8rem;
+    }
+    .container1,
+    .container2 {
+        margin: 0;
+        position: absolute;
+    }
+    .container1 {
+        left: 1.5rem;
+        top: 8rem;
+    }
+    .container2 {
+        top: 8rem;
+        left: 13rem;
+    }
+    .humanChoice {
+        margin-top: 1.8rem;
+    }
+    .main2 {
+        width: 100vw;
+    }
+    .part {
+        width: 9rem;
+        height: 9rem;
+    }
+    .partStone {
+        left: 1rem;
+    }
+    .partPaper {
+        right: 1rem;
+    }
+    .partScissor {
+        left: 6.5rem;
+    }
+    .submit {
+        margin-top: 1rem;
+    }
+}
