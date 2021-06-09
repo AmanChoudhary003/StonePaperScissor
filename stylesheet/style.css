@@ -176,13 +176,15 @@ body {
         padding: 1rem;
     }
     .bar {
+        width: 15rem;
         left: 1rem;
     }
     .bar::before {
         top: 8rem;
     }
     .bar::after {
-        top: 8rem;
+        top: 4rem;
+        right: 3rem;
     }
     .container1,
     .container2 {
